@@ -1,4 +1,4 @@
-import { rubik } from '@/app/fonts';
+import { rubik } from '@/src/app/fonts';
 
 function Navbar() {
   return (
