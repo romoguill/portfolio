@@ -8,7 +8,7 @@ function NavLink({ text, href, active = false }: NavLinkProps) {
   return (
     <a
       href={href}
-      className={`text-lg p-1 ${active ? 'text-cyan-300' : 'text-primary-50'}`}
+      className={`text-lg ${active ? 'text-cyan-300' : 'text-primary-100'}`}
     >
       {text}
     </a>
