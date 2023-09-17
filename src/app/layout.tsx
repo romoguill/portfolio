@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Navbar from '../components/Navbar/Navbar';
-import { robotoMono, rubik } from './fonts';
+import { robotoMono, rubik, indieFlower } from './fonts';
 import './globals.css';
+import Header from '../components/Header/Header';
+import MainContainer from '../components/MainContainer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,10 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={`${rubik.variable} ${robotoMono.variable}`}>
+    <html
+      lang='en'
+      className={`${rubik.variable} ${robotoMono.variable} ${indieFlower.variable}`}
+    >
       <body>
-        <Navbar />
-        {children}
+        <MainContainer>
+          <Header />
+          {children}
+        </MainContainer>
       </body>
     </html>
   );

@@ -1,13 +1,16 @@
 import { rubik } from '@/src/app/fonts';
+import { links } from '@/src/utils/links';
+import NavLink from './NavLink';
 
 function Navbar() {
   return (
-    <nav className='fixed h-20 bg-transparent'>
-      <ul>
-        <li className='font-sans'>Link</li>
-        <li>Link</li>
-        <li>Link</li>
-        <li>Link</li>
+    <nav>
+      <ul className='flex gap-16'>
+        {links.map((link) => (
+          <li key={link.text}>
+            <NavLink href={link.href} text={link.text} />
+          </li>
+        ))}
       </ul>
     </nav>
   );
