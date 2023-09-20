@@ -10,8 +10,6 @@ export const metadata: Metadata = {
   description: 'Portfolio',
 };
 
-console.log(rubik);
-
 export default function RootLayout({
   children,
 }: {

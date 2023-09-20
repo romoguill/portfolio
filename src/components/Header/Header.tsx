@@ -4,11 +4,11 @@ import Logo from './Logo';
 
 function Header() {
   return (
-    <div className='flex justify-between items-center h-20'>
+    <header className='flex justify-between items-center h-20'>
       <Logo />
       <Navbar />
       <LanguageSelect />
-    </div>
+    </header>
   );
 }
 
