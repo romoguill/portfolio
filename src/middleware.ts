@@ -13,8 +13,17 @@ function getLocale(request: NextRequest) {
 }
 
 export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  const pathnameHasLocale = i18n.locales.some((locale) => {
+    return pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`;
+  });
+
+  if (pathnameHasLocale) return;
+
   const userLocale = getLocale(request);
-  console.log(userLocale);
+  request.nextUrl.pathname = `/${userLocale}${pathname}`;
+
+  return Response.redirect(request.nextUrl);
 }
 
 export const config = {
