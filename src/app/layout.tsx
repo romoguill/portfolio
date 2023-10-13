@@ -12,12 +12,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { lang: string };
 }) {
   return (
     <html
-      lang='en'
+      lang={params.lang ?? 'en-US'}
       className={`${rubik.variable} ${robotoMono.variable} ${indieFlower.variable}`}
     >
       <body>
