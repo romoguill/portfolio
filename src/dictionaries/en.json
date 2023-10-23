@@ -1,3 +1,5 @@
 {
-  "introduction": "Hi"
+  "header": {
+    "navLinks": ["About", "Resume", "Projects"]
+  }
 }

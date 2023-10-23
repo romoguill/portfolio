@@ -3,8 +3,17 @@ import Hero from '../../components/Hero/Hero';
 import About from '../../components/About/About';
 import Resume from '../../components/Resume/Resume';
 import Projects from '../../components/Projects/Projects';
+import { getDictionary } from './dictionaries';
+import { Locale } from '@/src/i18n-config';
 
-export default function Home() {
+type PageProps = {
+  params: {
+    lang: Locale;
+  };
+};
+
+export default async function Home({ params: { lang } }: PageProps) {
+  const dict = await getDictionary(lang);
   return (
     <>
       <Hero />

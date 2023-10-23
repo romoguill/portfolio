@@ -4,19 +4,23 @@ import { robotoMono, rubik, indieFlower } from '../fonts';
 import '../globals.css';
 import Header from '../../components/Header/Header';
 import MainContainer from '../../components/MainContainer';
-import { i18n } from '../../i18n-config';
+import { Locale, i18n } from '../../i18n-config';
 
 export const metadata: Metadata = {
   title: 'Rodrigo Moguillansky',
   description: 'Portfolio',
 };
 
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'es' }];
+}
+
 export default function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: { lang: Locale };
 }) {
   return (
     <html
@@ -25,7 +29,7 @@ export default function RootLayout({
     >
       <body>
         <MainContainer>
-          <Header />
+          <Header lang={params.lang} />
           {children}
         </MainContainer>
       </body>
