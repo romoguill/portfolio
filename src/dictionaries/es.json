@@ -1,3 +1,18 @@
 {
-  "introduction": "Hola"
+  "header": {
+    "navLinks": [
+      {
+        "text": "Sobre Mí",
+        "href": "#about"
+      },
+      {
+        "text": "Currículum",
+        "href": "#resume"
+      },
+      {
+        "text": "Projectos",
+        "href": "#projects"
+      }
+    ]
+  }
 }

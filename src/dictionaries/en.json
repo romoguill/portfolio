@@ -1,5 +1,18 @@
 {
   "header": {
-    "navLinks": ["About", "Resume", "Projects"]
+    "navLinks": [
+      {
+        "text": "About",
+        "href": "#about"
+      },
+      {
+        "text": "Resume",
+        "href": "#resume"
+      },
+      {
+        "text": "Projects",
+        "href": "#projects"
+      }
+    ]
   }
 }

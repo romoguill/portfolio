@@ -13,7 +13,8 @@ type PageProps = {
 };
 
 export default async function Home({ params: { lang } }: PageProps) {
-  const dict = await getDictionary(lang);
+  const data = await getDictionary(lang);
+
   return (
     <>
       <Hero />
