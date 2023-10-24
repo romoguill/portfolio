@@ -16,7 +16,7 @@ async function Header({ lang }: HeaderProps) {
     <header className='flex justify-between items-center h-20'>
       <Logo />
       <Navbar navLinks={data.header.navLinks} />
-      <LanguageSelect />
+      <LanguageSelect lang={lang} />
     </header>
   );
 }

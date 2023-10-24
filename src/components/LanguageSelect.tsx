@@ -28,16 +28,26 @@ const languages: LanguageOption[] = [
   },
 ];
 
-function LanguageSelect() {
-  // const { pathname } = useRouter();
+type LanguageSelectProps = {
+  lang: Locale;
+};
+
+function LanguageSelect({ lang }: LanguageSelectProps) {
+  const selectedLanguage = languages.find((option) => {
+    return option.locale === lang;
+  });
 
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>
         <div className='flex items-center gap-1'>
           <div className='flex items-center gap-2'>
-            {/* <Image src={selectedLanguage.icon} alt='language flag' width={25} />
-            <p className='font-mono'>{selectedLanguage.locale}</p> */}
+            <Image
+              src={selectedLanguage?.icon}
+              alt='language flag'
+              width={25}
+            />
+            <p className='font-mono uppercase'>{selectedLanguage?.locale}</p>
           </div>
           <FaChevronDown className='h-3' />
         </div>
