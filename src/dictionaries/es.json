@@ -14,5 +14,9 @@
         "href": "#projects"
       }
     ]
+  },
+  "resume": {
+    "title": "Currículum",
+    "downloadButton": "Descargar PDF"
   }
 }

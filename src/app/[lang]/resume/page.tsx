@@ -1,23 +1,25 @@
 import HeadingSection from '@/src/components/HeadingSection';
-import { getActiveLocale } from '@/src/utils/getActiveLocale';
 import PdfViewer from './PdfViewer';
+import { Locale } from '@/src/i18n-config';
+import { getDictionary } from '../dictionaries';
 
-function ResumePage() {
-  const locale = getActiveLocale();
-  console.log(locale);
+async function ResumePage({ params: { lang } }: { params: { lang: Locale } }) {
+  const data = await getDictionary(lang);
+
   return (
     <div>
-      <div className='flex justify-between'>
-        <HeadingSection title='Resume' />
+      <div className='grid grid-cols-2 place-items-start mb-4'>
+        <HeadingSection title={data.resume.title} />
         <a
-          href='/en/cv-en.pdf'
-          className='px-3 py-2 rounded-md grid place-items-center bg-green-600 hover:bg-green-500 text-white'
+          href={`/${lang}/cv-${lang}.pdf`}
+          className='px-2 py-1 rounded-md grid place-items-center bg-green-600 hover:bg-green-500 text-white'
+          download='Rodrigo Moguillansky - Resume.pdf'
         >
-          Download
+          {data.resume.downloadButton}
         </a>
       </div>
 
-      <PdfViewer />
+      <PdfViewer lang={lang} />
     </div>
   );
 }

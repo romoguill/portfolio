@@ -1,14 +1,13 @@
 'use client';
 
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { FaChevronDown } from 'react-icons/fa6';
 import argFlag from '../assets/argFlag.svg';
 import usaFlag from '../assets/usaFlag.svg';
-import Image from 'next/image';
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import { FaChevronDown } from 'react-icons/fa6';
-import Link from 'next/link';
 import { Locale } from '../i18n-config';
-import { getActiveLocale } from '../utils/getActiveLocale';
-import { usePathname, useRouter } from 'next/navigation';
 
 type LanguageOption = {
   language: string;
