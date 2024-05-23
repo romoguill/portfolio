@@ -15,6 +15,9 @@
       }
     ]
   },
+  "hero": {
+    "description": "I'm a software developer passionate about Web Technologies and bringing business ideas to life."
+  },
   "resume": {
     "title": "Resume",
     "downloadButton": "Download PDF"

@@ -15,6 +15,9 @@
       }
     ]
   },
+  "hero": {
+    "description": "Soy un desarrollador web apasionado por crear aplicaciones web que resuelvan problemas de negocio."
+  },
   "resume": {
     "title": "Currículum",
     "downloadButton": "Descargar PDF"

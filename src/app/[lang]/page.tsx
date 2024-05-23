@@ -13,11 +13,11 @@ type PageProps = {
 };
 
 export default async function Home({ params: { lang } }: PageProps) {
-  const data = await getDictionary(lang);
+  const dictionary = await getDictionary(lang);
 
   return (
     <>
-      <Hero />
+      <Hero data={dictionary.hero} />
       <About />
       <Resume />
       <Projects />
