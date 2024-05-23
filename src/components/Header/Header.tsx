@@ -1,9 +1,9 @@
-import { getActiveLocale } from '@/src/utils/getActiveLocale';
+import { getDictionary } from '@/src/app/[lang]/dictionaries';
+import { Locale } from '@/src/i18n-config';
 import LanguageSelect from '../LanguageSelect';
 import Navbar from '../Navbar/Navbar';
+import MobileSidebar from '../Sidebar/MobileSidebar';
 import Logo from './Logo';
-import { Locale } from '@/src/i18n-config';
-import { getDictionary } from '@/src/app/[lang]/dictionaries';
 
 type HeaderProps = {
   lang: Locale;
@@ -17,6 +17,7 @@ async function Header({ lang }: HeaderProps) {
       <Logo />
       <Navbar navLinks={data.header.navLinks} />
       <LanguageSelect lang={lang} />
+      <MobileSidebar />
     </header>
   );
 }

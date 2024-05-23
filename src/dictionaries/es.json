@@ -2,8 +2,8 @@
   "header": {
     "navLinks": [
       {
-        "text": "Sobre Mí",
-        "href": "#about"
+        "text": "Introducción",
+        "href": "/es/#about"
       },
       {
         "text": "Currículum",
@@ -11,7 +11,7 @@
       },
       {
         "text": "Projectos",
-        "href": "#projects"
+        "href": "/es/#projects"
       }
     ]
   },

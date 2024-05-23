@@ -1,5 +1,4 @@
 import { Locale } from '@/src/i18n-config';
-import 'server-only';
 
 const dictionaries = {
   en: () =>
