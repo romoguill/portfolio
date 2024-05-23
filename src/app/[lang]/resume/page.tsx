@@ -1,33 +1,23 @@
-'use client';
-import { pdfjs, Document, Page } from 'react-pdf';
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url
-).toString();
+import HeadingSection from '@/src/components/HeadingSection';
+import { getActiveLocale } from '@/src/utils/getActiveLocale';
+import PdfViewer from './PdfViewer';
 
 function ResumePage() {
+  const locale = getActiveLocale();
+  console.log(locale);
   return (
     <div>
-      <Document file='/en/cv-en.pdf' className='overflow-hidden'>
-        <Page
-          pageNumber={1}
-          scale={1}
-          width={800}
-          renderTextLayer={false}
-          renderAnnotationLayer={false}
-          canvasBackground='transparent'
-          className='-ml-[1px]'
-        />
-        <Page
-          pageNumber={2}
-          scale={1}
-          width={800}
-          renderTextLayer={false}
-          renderAnnotationLayer={false}
-          canvasBackground='transparent'
-        />
-      </Document>
+      <div className='flex justify-between'>
+        <HeadingSection title='Resume' />
+        <a
+          href='/en/cv-en.pdf'
+          className='px-3 py-2 rounded-md grid place-items-center bg-green-600 hover:bg-green-500 text-white'
+        >
+          Download
+        </a>
+      </div>
+
+      <PdfViewer />
     </div>
   );
 }

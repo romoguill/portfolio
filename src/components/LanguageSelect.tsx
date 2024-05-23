@@ -8,6 +8,7 @@ import { FaChevronDown } from 'react-icons/fa6';
 import Link from 'next/link';
 import { Locale } from '../i18n-config';
 import { getActiveLocale } from '../utils/getActiveLocale';
+import { usePathname, useRouter } from 'next/navigation';
 
 type LanguageOption = {
   language: string;
@@ -33,9 +34,18 @@ type LanguageSelectProps = {
 };
 
 function LanguageSelect({ lang }: LanguageSelectProps) {
+  const pathname = usePathname();
   const selectedLanguage = languages.find((option) => {
     return option.locale === lang;
   });
+
+  const stripLocaleFromCurrentUrl = () => {
+    console.log(pathname);
+    if (pathname.startsWith('/en') || pathname.startsWith('/es')) {
+      return pathname.slice(3);
+    }
+    return pathname;
+  };
 
   return (
     <DropdownMenu.Root>
@@ -60,7 +70,7 @@ function LanguageSelect({ lang }: LanguageSelectProps) {
           {languages.map((language) => (
             <DropdownMenu.Item key={language.locale}>
               <Link
-                href={`/${language.locale}`}
+                href={`/${language.locale}/${stripLocaleFromCurrentUrl()}`}
                 className='flex items-center gap-2 pl-1 pr-3'
               >
                 <Image src={language.icon} alt='language flag' width={25} />
