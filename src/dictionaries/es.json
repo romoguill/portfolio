@@ -7,7 +7,7 @@
       },
       {
         "text": "Currículum",
-        "href": "/es/resume"
+        "href": "/es/#resume"
       },
       {
         "text": "Projectos",
@@ -33,13 +33,14 @@
   "resume": {
     "sectionTitle": "Currículum",
     "downloadButton": "Descargar PDF",
-    "sideNote": "",
+    "sideNote": "Ver Currículum completo",
+    "link": "es/resume",
     "content": [
-      "I hold a Master of Engineering (MEng) in Industrial Engineering and a Master's in Logistics. Additionally I have completed courses in Full Stack Development and Machine Learning.",
-      "Regarding my work experience, I started at Coca-Cola FEMSA. I was responsible for the procurement of all raw products that the bottling plant needed to operate, and to automate those processes after I went to tackle another position that was in charge of designing production plans with a time horizon between 6 months to 2years.",
-      "My next job was at Unilever, where I spent my time working with a team who's purpose was to modify the current Supply Chain structure minizing costs of Argentina's operation.",
-      "After that, I was offered a position at Axionlog where I stayed almost 5 years. I learnt a lot and participated in dozens of interesting proyects ranging from Process Automation, building Logistics ERPs, construction of a warehouse and building operational teams.",
-      "The last years I've been self employed managing a farm and getting ready to transition to the Web Development industry"
+      "Estudié Ingeniería Industrial y tengo un posgrado en Logística. Además, he completado cursos de Desarrollo Full Stack y Machine Learning.",
+      "Comencé mi carrera en Coca-Cola FEMSA, donde gestioné la compra de todas las materias primas para la planta embotelladora y diseñé planes de producción con un horizonte de 6 meses a 2 años.",
+      "Mi siguiente puesto fue en Unilever, donde trabajé con un equipo para reestructurar la cadena de suministro, minimizando los costos de las operaciones en Argentina.",
+      "Posteriormente, me uní a Axionlog y donde estuve casi 5 años, participando en diversos proyectos como la automatización de procesos, el desarrollo de ERPs logísticos, la construcción de un depósito y la formación de equipos operativos.",
+      "En los últimos años, he trabajado por cuenta propia, gestionando una campo agrícola y preparándome para una transición a la industria del desarrollo web."
     ]
   },
   "projects": {

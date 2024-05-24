@@ -7,7 +7,7 @@ interface ProjectsProps {
 
 function Projects({ data }: ProjectsProps) {
   return (
-    <section>
+    <section id='projects'>
       <HeadingSection title={data.sectionTitle} />
       <article>
         <h5>Technologies</h5>

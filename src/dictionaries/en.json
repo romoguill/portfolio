@@ -7,7 +7,7 @@
       },
       {
         "text": "Resume",
-        "href": "/en/resume"
+        "href": "/en/#resume"
       },
       {
         "text": "Projects",
@@ -34,6 +34,7 @@
     "sectionTitle": "Resume",
     "downloadButton": "Download PDF",
     "sideNote": "Click here to see the full Resume",
+    "link": "en/resume",
     "content": [
       "I hold a Master of Engineering (MEng) in Industrial Engineering and a Master's in Logistics. Additionally I have completed courses in Full Stack Development and Machine Learning.",
       "I began my career at Coca-Cola FEMSA, where I managed the procurement of all raw materials for the bottling plant and designed production plans with a horizon of 6 months to 2 years.",

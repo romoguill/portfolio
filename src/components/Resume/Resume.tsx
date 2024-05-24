@@ -8,7 +8,7 @@ interface ResumeProps {
 
 function Resume({ data }: ResumeProps) {
   return (
-    <section>
+    <section id='resume'>
       <HeadingSection title={data.sectionTitle} />
       <Link
         href='/resume'
