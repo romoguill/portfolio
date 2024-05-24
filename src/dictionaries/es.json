@@ -21,6 +21,10 @@
   "about": {
     "sectionTitle": "Introducción",
     "main": "Hola, soy Rodrigo Moguillansky, Ingeniero Industrial y desarrollador web con experiencia en la gestión de la cadena de suministro. Con 8 años de experiencia en la automatización de procesos, la construcción e implementación de software ERP personalizado, y la optimización de operaciones comerciales, aporto una perspectiva única al desarrollo de software. En el último año y medio, me he dedicado a la transición hacia el desarrollo web, enfocándome en crear soluciones de gran impacto para las empresas.",
+    "option": {
+      "expand": "saber más",
+      "collapse": "menos"
+    },
     "expanded": [
       "Habiendo experimentado de primera mano la importancia del software de buena calidad en diversas empresas, estoy motivado por la oportunidad de crear herramientas intuitivas y efectivas que realmente ayuden a las empresas a optimizar sus operaciones y alcanzar sus objetivos. Mi objetivo es aprovechar mi experiencia en ingeniería y mis habilidades en desarrollo web para desarrollar soluciones que marquen una verdadera diferencia.",
       "Estoy ansioso por profundizar mi conocimiento y mis capacidades para diseñar e implemetar aplicaciones completas desde cero. Esta ambición impulsa mi aprendizaje, asegurando que me mantenga al día con la constante evolución del desarrollo web."
@@ -28,7 +32,15 @@
   },
   "resume": {
     "sectionTitle": "Currículum",
-    "downloadButton": "Descargar PDF"
+    "downloadButton": "Descargar PDF",
+    "sideNote": "",
+    "content": [
+      "I hold a Master of Engineering (MEng) in Industrial Engineering and a Master's in Logistics. Additionally I have completed courses in Full Stack Development and Machine Learning.",
+      "Regarding my work experience, I started at Coca-Cola FEMSA. I was responsible for the procurement of all raw products that the bottling plant needed to operate, and to automate those processes after I went to tackle another position that was in charge of designing production plans with a time horizon between 6 months to 2years.",
+      "My next job was at Unilever, where I spent my time working with a team who's purpose was to modify the current Supply Chain structure minizing costs of Argentina's operation.",
+      "After that, I was offered a position at Axionlog where I stayed almost 5 years. I learnt a lot and participated in dozens of interesting proyects ranging from Process Automation, building Logistics ERPs, construction of a warehouse and building operational teams.",
+      "The last years I've been self employed managing a farm and getting ready to transition to the Web Development industry"
+    ]
   },
   "projects": {
     "sectionTitle": "Projectos"

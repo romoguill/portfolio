@@ -1,9 +1,28 @@
+import { Dictionary } from '@/src/app/[lang]/dictionaries';
 import HeadingSection from '../HeadingSection';
+import Link from 'next/link';
 
-function Resume() {
+interface ResumeProps {
+  data: Dictionary['resume'];
+}
+
+function Resume({ data }: ResumeProps) {
   return (
     <section>
-      <HeadingSection title='Resume' />
+      <HeadingSection title={data.sectionTitle} />
+      <Link
+        href='/resume'
+        className='italic text-sm mb-3 block text-blue-300 hover:text-primary-300'
+      >
+        {`>> ${data.sideNote} <<`}
+      </Link>
+      <article className='space-y-2'>
+        {data.content.map((item, i) => (
+          <p key={i} className='max-w-prose'>
+            {item}
+          </p>
+        ))}
+      </article>
     </section>
   );
 }

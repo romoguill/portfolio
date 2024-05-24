@@ -21,7 +21,7 @@ function About({ data }: AboutProps) {
 
       <Collapsible.Root open={open} onOpenChange={setOpen}>
         <Collapsible.Trigger className='group mx-auto flex gap-2 items-center italic text-sm my-3 py-1 px-2 bg-gray-50/5 rounded-lg text-yellow-400 data-[state=open]:text-red-300'>
-          {!open ? 'know more' : 'too much'}
+          {!open ? data.option.expand : data.option.collapse}
           <FaChevronDown
             size={10}
             className='group-data-[state=open]:rotate-180 transition-transform duration-300'
@@ -29,7 +29,7 @@ function About({ data }: AboutProps) {
         </Collapsible.Trigger>
         <Collapsible.Content className='collapsible-content'>
           {data.expanded.map((item, i) => (
-            <p key={i} className='mt-2'>
+            <p key={i} className='mt-2 max-w-prose'>
               {item}
             </p>
           ))}

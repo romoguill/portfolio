@@ -21,6 +21,10 @@
   "about": {
     "sectionTitle": "About Me",
     "main": "Hello, I'm Rodrigo Moguillansky, an Industrial Engineer and web developer with a background in Supply Chain management. With 8 years of experience in automating processes, constructing and implementing ERP custom software, and optimizing business operations, I bring a distinct perspective to software development. Over the past year and a half, I have dedicated myself to transitioning into web development, focusing on creating impactful solutions for businesses.",
+    "option": {
+      "expand": "know more",
+      "collapse": "too much"
+    },
     "expanded": [
       "Having experienced firsthand the importance of good quality software in various companies, I am motivated by the opportunity to create intuitive and effective tools that genuinely help businesses streamline their operations and achieve their goals. My goal is to leverage my engineering expertise and web development skills to develop solutions that make a real difference.",
       "I am eager to deepen my knowledge and capabilities to design and architect complete applications from scratch. This ambition drives my daily learning and practice, ensuring I stay ahead in the rapidly evolving field of web development."
@@ -28,7 +32,15 @@
   },
   "resume": {
     "sectionTitle": "Resume",
-    "downloadButton": "Download PDF"
+    "downloadButton": "Download PDF",
+    "sideNote": "Click here to see the full Resume",
+    "content": [
+      "I hold a Master of Engineering (MEng) in Industrial Engineering and a Master's in Logistics. Additionally I have completed courses in Full Stack Development and Machine Learning.",
+      "I began my career at Coca-Cola FEMSA, where I managed the procurement of all raw materials for the bottling plant and designed production plans with a horizon of 6 months to 2 years.",
+      "My next role was at Unilever, where I worked with a team to restructure the supply chain, minimizing costs for Argentina's operations.",
+      "Subsequently, I joined Axionlog and spent almost 5 years there, participating in various projects such as processes automation, developing logistics ERPs, constructing a warehouse, and building operational teams.",
+      "In recent years, I have been self-employed, managing a farm and preparing for a transition into the web development industry."
+    ]
   },
   "projects": {
     "sectionTitle": "Projects"

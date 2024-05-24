@@ -2,6 +2,7 @@ import { Dictionary } from '@/src/app/[lang]/dictionaries';
 import Image from 'next/image';
 import profilePic from '../../../public/profile.jpg';
 import BlobProfile from '../BlobProfile';
+import Stack from '../About/Stack';
 
 interface HeroProps {
   data: Dictionary['hero'];
@@ -19,6 +20,7 @@ function Hero({ data }: HeroProps) {
         <p className='mx-auto max-w-[320px] sm:mx-0 sm:w-8/12 md:w-full pt-4'>
           {data.description}
         </p>
+        <Stack />
       </div>
 
       <div className='relative shrink-0 w-[220px] h-[220px] md:w-[300px] md:h-[300px] grid place-items-center mt-6 mb-4 md:my-0 '>
