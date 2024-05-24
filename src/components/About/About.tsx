@@ -28,7 +28,11 @@ function About({ data }: AboutProps) {
           />
         </Collapsible.Trigger>
         <Collapsible.Content className='collapsible-content'>
-          {data.main}
+          {data.expanded.map((item, i) => (
+            <p key={i} className='mt-2'>
+              {item}
+            </p>
+          ))}
         </Collapsible.Content>
       </Collapsible.Root>
     </section>
