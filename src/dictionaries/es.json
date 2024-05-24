@@ -18,8 +18,15 @@
   "hero": {
     "description": "Soy un desarrollador web apasionado por crear aplicaciones web que resuelvan problemas de negocio."
   },
+  "about": {
+    "sectionTitle": "Introducción",
+    "main": "Hola, soy Rodrigo Moguillansky, un apasionado desarrollador web con experiencia en la gestión de la cadena de suministro. Con 8 años de experiencia en la automatización de procesos, la construcción e implementación de software ERP personalizado, y la optimización de operaciones comerciales, aporto una perspectiva única al desarrollo de software. En el último año y medio, me he dedicado a la transición hacia el desarrollo web, enfocándome en crear soluciones de gran impacto para las empresas."
+  },
   "resume": {
-    "title": "Currículum",
+    "sectionTitle": "Currículum",
     "downloadButton": "Descargar PDF"
+  },
+  "projects": {
+    "sectionTitle": "Projectos"
   }
 }

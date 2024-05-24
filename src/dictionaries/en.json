@@ -18,8 +18,15 @@
   "hero": {
     "description": "I'm a software developer passionate about Web Technologies and bringing business ideas to life."
   },
+  "about": {
+    "sectionTitle": "About Me",
+    "main": "Hello, I'm Rodrigo Moguillansky, a passionate web developer with a background in Supply Chain management. With 8 years of experience in automating processes, constructing and implementing ERP custom software, and optimizing business operations, I bring a distinct perspective to software development. Over the past year and a half, I have dedicated myself to transitioning into web development, focusing on creating impactful solutions for businesses."
+  },
   "resume": {
-    "title": "Resume",
+    "sectionTitle": "Resume",
     "downloadButton": "Download PDF"
+  },
+  "projects": {
+    "sectionTitle": "Projects"
   }
 }

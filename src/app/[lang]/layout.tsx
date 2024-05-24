@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
-import Navbar from '../../components/Navbar/Navbar';
-import { robotoMono, rubik, indieFlower } from '../fonts';
-import '../globals.css';
 import Header from '../../components/Header/Header';
 import MainContainer from '../../components/MainContainer';
 import { Locale, i18n } from '../../i18n-config';
+import { indieFlower, robotoMono, rubik } from '../fonts';
+import '../globals.css';
 
 export const metadata: Metadata = {
   title: 'Rodrigo Moguillansky',

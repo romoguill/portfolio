@@ -1,9 +1,14 @@
+import { Dictionary } from '@/src/app/[lang]/dictionaries';
 import HeadingSection from '../HeadingSection';
 
-function Projects() {
+interface ProjectsProps {
+  data: Dictionary['projects'];
+}
+
+function Projects({ data }: ProjectsProps) {
   return (
     <section>
-      <HeadingSection title='Projects' />
+      <HeadingSection title={data.sectionTitle} />
     </section>
   );
 }
