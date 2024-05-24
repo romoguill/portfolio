@@ -13,7 +13,7 @@ async function Header({ lang }: HeaderProps) {
   const data = await getDictionary(lang);
 
   return (
-    <header className='flex justify-between items-center h-20'>
+    <header className='flex justify-between items-center h-16 md:h-20'>
       <Logo />
       <Navbar navLinks={data.header.navLinks} />
       <LanguageSelect lang={lang} />

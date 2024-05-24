@@ -55,8 +55,11 @@ function LanguageSelect({ lang }: LanguageSelectProps) {
               src={selectedLanguage?.icon}
               alt='language flag'
               width={25}
+              className='w-[22px] md:w-[25px]'
             />
-            <p className='font-mono uppercase'>{selectedLanguage?.locale}</p>
+            <p className='font-mono text-sm md:text-base uppercase'>
+              {selectedLanguage?.locale}
+            </p>
           </div>
           <FaChevronDown className='h-3' />
         </div>
@@ -72,8 +75,15 @@ function LanguageSelect({ lang }: LanguageSelectProps) {
                 href={`/${language.locale}/${stripLocaleFromCurrentUrl()}`}
                 className='flex items-center gap-2 pl-1 pr-3'
               >
-                <Image src={language.icon} alt='language flag' width={25} />
-                <p className='font-mono uppercase'>{language.locale}</p>
+                <Image
+                  src={language.icon}
+                  alt='language flag'
+                  width={25}
+                  className='w-22 md:w-25'
+                />
+                <p className='font-mono text-sm md:text-base uppercase'>
+                  {language.locale}
+                </p>
               </Link>
             </DropdownMenu.Item>
           ))}
