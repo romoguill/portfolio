@@ -4,11 +4,10 @@ import { Locale } from '@/src/i18n-config';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { BiLoaderAlt } from 'react-icons/bi';
 import { useEffect, useRef, useState } from 'react';
+// @ts-ignore
+import worker from 'pdfjs-dist/build/pdf.worker';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = worker;
 
 interface PdfViewerProps {
   lang: Locale;

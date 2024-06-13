@@ -9,7 +9,7 @@ async function ResumePage({ params: { lang } }: { params: { lang: Locale } }) {
   return (
     <div>
       <div className='grid grid-cols-2 place-items-start mb-4'>
-        <HeadingSection title={data.resume.title} />
+        <HeadingSection title={data.resume.sectionTitle} />
         <a
           href={`/${lang}/cv-${lang}.pdf`}
           className='px-2 py-1 rounded-md grid place-items-center bg-green-600 hover:bg-green-500 text-white'
