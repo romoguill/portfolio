@@ -57,7 +57,7 @@ function LanguageSelect({ lang }: LanguageSelectProps) {
               width={25}
               className='w-[22px] md:w-[25px]'
             />
-            <p className='font-mono text-sm md:text-base uppercase'>
+            <p className='font-mono md:text-base uppercase'>
               {selectedLanguage?.locale}
             </p>
           </div>
@@ -66,7 +66,7 @@ function LanguageSelect({ lang }: LanguageSelectProps) {
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className='bg-primary-200 rounded-md text-primary-950 font-medium mt-2 p-1'
+          className='bg-primary-200 rounded-md text-primary-950 font-medium mt-2 p-1 space-y-2'
           align='start'
         >
           {languages.map((language) => (
@@ -81,7 +81,7 @@ function LanguageSelect({ lang }: LanguageSelectProps) {
                   width={25}
                   className='w-22 md:w-25'
                 />
-                <p className='font-mono text-sm md:text-base uppercase'>
+                <p className='font-mono text-base uppercase'>
                   {language.locale}
                 </p>
               </Link>
