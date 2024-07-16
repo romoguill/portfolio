@@ -1,5 +1,6 @@
 import { Dictionary } from '@/src/app/[lang]/dictionaries';
 import HeadingSection from '../HeadingSection';
+import ProjectsCard from './ProjectsCard';
 
 interface ProjectsProps {
   data: Dictionary['projects'];
@@ -10,7 +11,14 @@ function Projects({ data }: ProjectsProps) {
     <section id='projects'>
       <HeadingSection title={data.sectionTitle} />
       <article>
-        <h5>Technologies</h5>
+        {data.items.map((item) => (
+          <ProjectsCard
+            key={item.name}
+            title={item.name}
+            description={item.description}
+            image={item.imageUrl}
+          />
+        ))}
       </article>
     </section>
   );
