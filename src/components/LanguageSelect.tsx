@@ -39,7 +39,6 @@ function LanguageSelect({ lang }: LanguageSelectProps) {
   });
 
   const stripLocaleFromCurrentUrl = () => {
-    console.log(pathname);
     if (pathname.startsWith('/en') || pathname.startsWith('/es')) {
       return pathname.slice(3);
     }
