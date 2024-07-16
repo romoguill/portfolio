@@ -14,12 +14,12 @@ function MobileSidebar() {
 
   return (
     <Dialog.Root>
-      <Dialog.Trigger className='p-1 rounded-xl hover:bg-primary-900 transition md:hidden'>
+      <Dialog.Trigger className='p-1 rounded-xl hover:bg-primary-900 transition'>
         <HiMenuAlt2 size={30} />
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className='fixed inset-0 backdrop-blur-sm bg-white/10 md:hidden' />
-        <Dialog.Content className='fixed top-0 bottom-0 right-0 w-56 py-28 px-6 bg-primary-950 md:hidden'>
+        <Dialog.Overlay className='fixed inset-0 backdrop-blur-sm bg-white/10 z-50' />
+        <Dialog.Content className='fixed top-0 bottom-0 right-0 w-56 py-28 px-6 bg-primary-950 z-50'>
           <Dialog.DialogClose className='text-white fixed top-5 right-5 hover:bg-primary-900 transition rounded-sm'>
             <IoClose size={32} className='' />
           </Dialog.DialogClose>
@@ -27,12 +27,14 @@ function MobileSidebar() {
             <ul className='space-y-6'>
               {dictionary?.header.navLinks.map((link) => (
                 <li key={link.href} className='w-full text-right text-xl'>
+                  {/* <Dialog.DialogClose>? */}
                   <Link
                     href={link.href}
                     className='relative after:absolute after:h-[2px] after:w-0 after:-bottom-1 after:right-0 after:bg-yellow-400 after:rounded-xl hover:after:w-full after:transition-all after:duration-300'
                   >
                     {link.text}
                   </Link>
+                  {/* </Dialog.DialogClose> */}
                 </li>
               ))}
             </ul>

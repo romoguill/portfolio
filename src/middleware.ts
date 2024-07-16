@@ -18,6 +18,8 @@ export function middleware(request: NextRequest) {
     return pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`;
   });
 
+  console.log(pathnameHasLocale);
+
   if (pathnameHasLocale) return;
 
   const userLocale = getLocale(request);

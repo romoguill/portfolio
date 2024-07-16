@@ -3,15 +3,15 @@
     "navLinks": [
       {
         "text": "About",
-        "href": "/en/#about"
+        "href": "/en#about"
       },
       {
         "text": "Resume",
-        "href": "/en/#resume"
+        "href": "/en#resume"
       },
       {
         "text": "Projects",
-        "href": "/en/#projects"
+        "href": "/en#projects"
       }
     ]
   },
