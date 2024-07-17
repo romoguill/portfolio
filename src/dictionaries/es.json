@@ -48,8 +48,14 @@
     "items": [
       {
         "name": "Check-Delta",
+        "githubLink": "https://github.com/romoguill/inventory-checking",
+        "deployedLink": "https://www.check-delta.cloud",
+        "card": {
+          "description": "Inventory management with multiple rounds of stock checking, team followup and stock reconciliation",
+          "technologies": ["Typescript", "Next.js", "PostgreSQL"]
+        },
         "description": "An inventory checking solution for small businesses that allows managers to command the inventory rounds for each of the company's products. They can manage their team, selecting which operator is going to perform the blind round. Within the app the operator is going to enter the stock of each product as they count, and when it's done, the app will report to the manager the differences. If they are big enougth (previously configured), it will generate a new round with only those items that didn't pass the first test. After the second time, the manager will have to perform the reconciliation phase where the item's stock will be updated",
-        "imageUrl": "/check-delta.PNG"
+        "imageUrl": "/check-delta.jpg"
       }
     ]
   }

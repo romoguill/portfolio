@@ -13,6 +13,9 @@ function getLocale(request: NextRequest) {
 }
 
 export function middleware(request: NextRequest) {
+  console.log('middleware');
+  console.log(request.nextUrl);
+
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = i18n.locales.some((locale) => {
     return pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`;
@@ -27,5 +30,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|.*\\..*).*)'],
 };

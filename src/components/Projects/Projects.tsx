@@ -8,18 +8,20 @@ interface ProjectsProps {
 
 function Projects({ data }: ProjectsProps) {
   return (
-    <section id='projects'>
+    <section id='projects' className='mb-6'>
       <HeadingSection title={data.sectionTitle} />
-      <article>
+      <div>
         {data.items.map((item) => (
           <ProjectsCard
             key={item.name}
             title={item.name}
-            description={item.description}
+            description={item.card.description}
             image={item.imageUrl}
+            githubLink={item.githubLink}
+            deployedLink={item.deployedLink}
           />
         ))}
-      </article>
+      </div>
     </section>
   );
 }
