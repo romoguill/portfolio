@@ -34,7 +34,21 @@ function ProjectsCard({ item }: ProjectsCardProps) {
           </div>
         </div>
         <p>{item.card.description}</p>
-        <p>{item.card.type}</p>
+
+        <section className='mt-2'>
+          <p>
+            <span className='text-neutral-200 italic pr-2'>type: </span>
+            {item.card.type}
+          </p>
+          <p>
+            <span className='text-neutral-200 italic pr-2'>lang: </span>
+            {item.card.languages.join(', ')}
+          </p>
+          <p>
+            <span className='text-neutral-200 italic pr-2'>tech: </span>
+            {item.card.technologies.join(', ')}
+          </p>
+        </section>
       </div>
     </article>
   );
