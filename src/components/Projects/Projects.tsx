@@ -12,14 +12,7 @@ function Projects({ data }: ProjectsProps) {
       <HeadingSection title={data.sectionTitle} />
       <div>
         {data.items.map((item) => (
-          <ProjectsCard
-            key={item.name}
-            title={item.name}
-            description={item.card.description}
-            image={item.imageUrl}
-            githubLink={item.githubLink}
-            deployedLink={item.deployedLink}
-          />
+          <ProjectsCard key={item.name} item={item} />
         ))}
       </div>
     </section>
