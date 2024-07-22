@@ -9,7 +9,7 @@ interface ProjectsCardProps {
 
 function ProjectsCard({ item }: ProjectsCardProps) {
   return (
-    <article className='rounded-xl overflow-hidden w-80 bg-secondary-900 relative shadow-md'>
+    <article className='rounded-xl overflow-hidden bg-secondary-900 relative shadow-md'>
       <div className='p-3'>
         <div className='flex justify-between items-center mb-2'>
           <h3 className={`text-2xl tracking-wide ${robotoMono.className}`}>

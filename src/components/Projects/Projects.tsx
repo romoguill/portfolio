@@ -10,7 +10,7 @@ function Projects({ data }: ProjectsProps) {
   return (
     <section id='projects' className='mb-6'>
       <HeadingSection title={data.sectionTitle} />
-      <div>
+      <div className='flex flex-col gap-6 sm:grid sm:grid-cols-2'>
         {data.items.map((item) => (
           <ProjectsCard key={item.name} item={item} />
         ))}
