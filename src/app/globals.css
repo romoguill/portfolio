@@ -5,6 +5,16 @@
 html,
 body {
   @apply bg-primary-950 text-primary-50;
+  backface-visibility: hidden;
+}
+
+.no-flicker {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+
+  backface-visibility: hidden;
+  transform: perspective(1px) translateZ(0);
 }
 
 .collapsible-content {
