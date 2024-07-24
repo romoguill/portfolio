@@ -5,11 +5,15 @@ import { FaGithub } from 'react-icons/fa6';
 
 interface ProjectsCardProps {
   item: Dictionary['projects']['items'][number];
+  onClick: () => void;
 }
 
-function ProjectsCard({ item }: ProjectsCardProps) {
+function ProjectsCard({ item, onClick }: ProjectsCardProps) {
   return (
-    <article className='rounded-xl overflow-hidden bg-secondary-900 relative shadow-xl transition-transform cursor-pointer hover:scale-[1.028] no-flicker'>
+    <article
+      className='rounded-xl overflow-hidden bg-secondary-900 relative shadow-xl transition-transform cursor-pointer hover:scale-[1.028] no-flicker'
+      onClick={onClick}
+    >
       <div className='p-3'>
         <div className='flex justify-between items-center mb-2'>
           <h3 className={`text-2xl tracking-wide ${robotoMono.className}`}>
