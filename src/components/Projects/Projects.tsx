@@ -33,7 +33,13 @@ function Projects({ data }: ProjectsProps) {
           />
         ))}
       </div>
-      <ProjectModal isOpen={isOpen} setIsOpen={setIsOpen} data={projectData} />
+      {projectData && (
+        <ProjectModal
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          data={projectData}
+        />
+      )}
     </section>
   );
 }
