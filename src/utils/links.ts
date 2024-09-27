@@ -17,3 +17,5 @@ export const links: Link[] = [
     href: '#projects',
   },
 ];
+
+export const githubURL = 'https://github.com/romoguill';

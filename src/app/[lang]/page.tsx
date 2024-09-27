@@ -17,7 +17,7 @@ export default async function Home({ params: { lang } }: PageProps) {
 
   return (
     <>
-      <Hero data={dictionary.hero} />
+      <Hero data={dictionary.hero} lang={lang} />
       <About data={dictionary.about} />
       <Resume data={dictionary.resume} />
       <Projects data={dictionary.projects} />
