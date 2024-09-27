@@ -18,12 +18,15 @@ function MobileSidebar() {
         <HiMenuAlt2 size={30} />
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className='fixed inset-0 backdrop-blur-sm bg-white/10 z-50 md:hidden' />
+        <Dialog.Overlay className='fixed inset-0 backdrop-blur-sm bg-white/10 z-50 md:hidden data-[state=closed]:animate-overlay-close data-[state=open]:animate-overlay-open' />
         <Dialog.Content
-          className='fixed top-0 bottom-0 right-0 w-56 py-28 px-6 bg-primary-950 z-50 md:hidden'
+          className='fixed top-0 bottom-0 right-0 w-56 py-28 px-6 bg-primary-950 z-50 md:hidden data-[state=closed]:animate-sidebar-close data-[state=open]:animate-sidebar-open'
           onCloseAutoFocus={(e) => e.preventDefault()}
         >
-          <Dialog.DialogClose className='text-white fixed top-5 right-5 hover:bg-primary-900 transition rounded-sm'>
+          <Dialog.DialogClose
+            className='text-white fixed top-5 right-5 hover:bg-primary-900 transition rounded-sm'
+            aria-label='Close'
+          >
             <IoClose size={32} />
           </Dialog.DialogClose>
           <div className='w-full'>
