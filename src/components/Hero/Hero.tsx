@@ -61,7 +61,7 @@ function Hero({ data, lang }: HeroProps) {
               className='flex items-center justify-center lg:justify-start gap-2'
               target='_blank'
             >
-              Github{' '}
+              GitHub{' '}
               <span>
                 <FaGithub />
               </span>
