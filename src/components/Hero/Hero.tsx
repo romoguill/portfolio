@@ -16,7 +16,7 @@ function Hero({ data, lang }: HeroProps) {
   return (
     <section
       id='home'
-      className='my-10 sm:my-20 text-primary-50 flex justify-between items-center'
+      className='my-10 sm:my-20 text-primary-50 lg:flex lg:justify-between lg:items-center'
     >
       <div className='flex flex-col items-center sm:flex-row sm:items-center sm:gap-8 md:gap-20'>
         <div className='flex flex-col gap-2 text-center sm:text-start'>
@@ -41,12 +41,12 @@ function Hero({ data, lang }: HeroProps) {
           <BlobProfile className='absolute z-10 -top-8 -right-10 w-[310px] h-[310px] md:w-[400px] md:h-[400px]' />
         </div>
       </div>
-      <div>
-        <ul className='space-y-8 text-end w-[160px]'>
-          <li className='text-yellow-400 rounded-l-xl bg-gradient-to-r from-primary-900 to-primary-950 py-2 pl-2 w-[150px] hover:w-[160px] ml-auto transition-all'>
+      <div className='sm:w-[350px]'>
+        <ul className='flex items-center mt-16 justify-center gap-2 lg:block lg:mt-0 lg:space-y-8 lg:text-end lg:w-[160px]'>
+          <li className='text-yellow-400 rounded-xl lg:rounded-l-xl lg:bg-gradient-to-r bg-primary-900 lg:from-primary-900 lg:to-primary-950 py-2 pl-2 w-[150px] lg:hover:w-[160px] lg:ml-auto transition-all'>
             <a
               href={`/${lang}/cv-${lang}.pdf`}
-              className='flex items-center gap-2'
+              className='flex items-center justify-center lg:justify-start gap-2'
               download='Rodrigo Moguillansky - Resume.pdf'
             >
               Resume{' '}
@@ -55,10 +55,10 @@ function Hero({ data, lang }: HeroProps) {
               </span>
             </a>
           </li>
-          <li className='text-yellow-400 rounded-l-xl bg-gradient-to-r from-primary-900 to-primary-950 py-2 pl-2 w-[150px] hover:w-[160px] ml-auto transition-all'>
+          <li className='text-yellow-400 rounded-xl lg:rounded-l-xl lg:bg-gradient-to-r bg-primary-900 lg:from-primary-900 lg:to-primary-950 py-2 pl-2 w-[150px] lg:hover:w-[160px] lg:ml-auto transition-all'>
             <a
               href={githubURL}
-              className='flex items-center gap-2'
+              className='flex items-center justify-center lg:justify-start gap-2'
               target='_blank'
             >
               Github{' '}
