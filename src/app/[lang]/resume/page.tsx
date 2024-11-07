@@ -1,5 +1,5 @@
 import HeadingSection from '@/src/components/HeadingSection';
-import PdfViewer from './PdfViewer';
+// import PdfViewer from './PdfViewer';
 import { Locale } from '@/src/i18n-config';
 import { getDictionary } from '../dictionaries';
 
@@ -19,7 +19,7 @@ async function ResumePage({ params: { lang } }: { params: { lang: Locale } }) {
         </a>
       </div>
 
-      <PdfViewer lang={lang} />
+      {/* <PdfViewer lang={lang} /> */}
     </div>
   );
 }
