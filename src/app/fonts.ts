@@ -11,7 +11,6 @@ export const rubik = Rubik({
   variable: '--font-rubik',
   display: 'swap',
 });
-
 export const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
