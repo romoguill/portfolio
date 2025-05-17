@@ -18,7 +18,7 @@ function Hero({ data, lang }: HeroProps) {
       id='home'
       className='my-10 sm:my-20 text-primary-50 lg:flex lg:justify-between lg:items-center'
     >
-      <div className='flex flex-col items-center sm:flex-row sm:items-center sm:gap-8 md:gap-20'>
+      <div className='flex flex-col items-center sm:flex-row sm:items-center sm:gap-8 md:gap-10'>
         <div className='flex flex-col gap-2 text-center sm:text-start'>
           <h1 className='text-3xl sm:text-4xl'>Rodrigo Moguillanksy</h1>
           <h3 className='text-xl text-primary-100'>Full Stack Web Developer</h3>
@@ -41,7 +41,7 @@ function Hero({ data, lang }: HeroProps) {
           <BlobProfile className='absolute z-10 -top-8 -right-10 w-[310px] h-[310px] md:w-[400px] md:h-[400px]' />
         </div>
       </div>
-      <div className='sm:w-[350px]'>
+      <div className='md:w-[250px] lg:w-[150px]'>
         <ul className='flex items-center mt-16 justify-center gap-2 lg:block lg:mt-0 lg:space-y-8 lg:text-end lg:w-[160px]'>
           <li className='text-yellow-400 rounded-xl lg:rounded-l-xl lg:bg-gradient-to-r bg-primary-900 lg:from-primary-900 lg:to-primary-950 py-2 pl-2 w-[150px] lg:hover:w-[160px] lg:ml-auto transition-all'>
             <a
