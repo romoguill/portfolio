@@ -19,7 +19,7 @@ export default async function Home({ params: { lang } }: PageProps) {
     <>
       <Hero data={dictionary.hero} lang={lang} />
       <About data={dictionary.about} />
-      <Resume data={dictionary.resume} />
+      <Resume data={dictionary.resume} lang={lang} />
       <Projects data={dictionary.projects} />
     </>
   );
