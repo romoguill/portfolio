@@ -17,10 +17,10 @@ function About({ data }: AboutProps) {
   return (
     <section>
       <HeadingSection title={data.sectionTitle} />
-      <p className='text-base max-w-prose'>{data.main}</p>
+      <p className='text-base max-w-prose leading-relaxed'>{data.main}</p>
 
       <Collapsible.Root open={open} onOpenChange={setOpen}>
-        <Collapsible.Trigger className='group mx-auto flex gap-2 items-center italic text-sm my-3 py-1 px-2 bg-gray-50/5 rounded-lg text-yellow-400 data-[state=open]:text-red-300'>
+        <Collapsible.Trigger className='group mx-auto flex gap-2 items-center italic text-sm mt-6 py-1 px-2 bg-gray-50/5 rounded-lg text-yellow-400 data-[state=open]:text-red-300'>
           {!open ? data.option.expand : data.option.collapse}
           <FaChevronDown
             size={10}
@@ -29,7 +29,7 @@ function About({ data }: AboutProps) {
         </Collapsible.Trigger>
         <Collapsible.Content className='collapsible-content'>
           {data.expanded.map((item, i) => (
-            <p key={i} className='mt-2 max-w-prose'>
+            <p key={i} className='max-w-prose mt-6'>
               {item}
             </p>
           ))}
