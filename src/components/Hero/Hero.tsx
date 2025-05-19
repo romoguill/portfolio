@@ -20,7 +20,7 @@ function Hero({ data, lang }: HeroProps) {
     >
       <div className='flex flex-col items-center sm:flex-row sm:items-center sm:gap-8 md:gap-10'>
         <div className='flex flex-col gap-2 text-center sm:text-start'>
-          <h1 className='text-3xl sm:text-4xl'>Rodrigo Moguillanksy</h1>
+          <h1 className='text-3xl sm:text-4xl'>Rodrigo Moguillansky</h1>
           <h3 className='text-xl text-primary-100'>Full Stack Web Developer</h3>
           <p className='mx-auto max-w-[400px] sm:mx-0 sm:w-8/12 md:w-full pt-4'>
             {data.description}
