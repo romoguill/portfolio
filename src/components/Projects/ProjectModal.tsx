@@ -4,8 +4,10 @@ import { Dictionary } from '@/src/app/[lang]/dictionaries';
 import * as Dialog from '@radix-ui/react-dialog';
 import * as ScrollArea from '@radix-ui/react-scroll-area';
 import { SetStateAction, useState } from 'react';
-import ProjectVideo from './ProjectVideo';
+import ProjectVideo from './ProjectDisplay';
 import { inter, robotoMono, rubik } from '@/src/app/fonts';
+import { IoCloseCircle } from 'react-icons/io5';
+import ProjectDisplay from './ProjectDisplay';
 
 interface ProjectModalProps {
   isOpen: boolean;
@@ -17,8 +19,15 @@ function ProjectModal({ isOpen, setIsOpen, data }: ProjectModalProps) {
   return (
     <Dialog.Root open={isOpen} onOpenChange={setIsOpen}>
       <Dialog.Portal>
-        <Dialog.Overlay className='fixed inset-0 backdrop-blur-sm bg-black/60 z-50' />
-        <Dialog.Content className='fixed top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%] w-1/2 bg-primary-950 z-50 p-3 text-neutral-100'>
+        <Dialog.Overlay className='fixed inset-0 backdrop-blur-sm bg-black/60 z-40' />
+        <Dialog.Content className='fixed top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%]  w-full max-w-lg md:max-w-2xl bg-primary-950 z-50 p-3 text-neutral-100'>
+          <button
+            className='absolute top-3 right-3 text-neutral-100 text-2xl cursor-pointer z-50'
+            onClick={() => setIsOpen(false)}
+          >
+            <IoCloseCircle size={40} className='fill-red-500' />
+          </button>
+
           <ScrollArea.Root className='h-[700px] overflow-hidden'>
             <ScrollArea.Viewport className='h-full w-full p-5'>
               <Dialog.Title className='text-2xl tracking-wider'>
@@ -26,7 +35,7 @@ function ProjectModal({ isOpen, setIsOpen, data }: ProjectModalProps) {
               </Dialog.Title>
               <Dialog.Description>{data.card.description}</Dialog.Description>
               <div className='flex flex-col gap-5'>
-                <ProjectVideo />
+                <ProjectDisplay type='image' url={data.imageUrl} />
 
                 <article>
                   <p>{data.description}</p>
