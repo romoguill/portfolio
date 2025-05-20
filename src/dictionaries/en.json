@@ -56,7 +56,15 @@
           "technologies": ["Next.js", "Hono"],
           "languages": ["Typescript"]
         },
+        "sections": ["Summary", "Features", "Tech Stack"],
         "description": "Startup that provides a platform for creating and managing medical reports for imaging centers. It enables hospitals to outsource their reports, while keeping control of the process and the data.",
+        "features": [
+          "Image upload.",
+          "Report generation.",
+          "Report management.",
+          "Report sharing."
+        ],
+        "techStack": "Typescript,Next.js, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing",
         "imageUrl": "/pixmed.png"
       },
       {
@@ -69,7 +77,15 @@
           "technologies": ["React", "Hono"],
           "languages": ["Typescript"]
         },
+        "sections": ["Summary", "Features", "Tech Stack"],
         "description": "Play a puzzle from the curated list of games or upload your own image to create your own procedurally generated jigsaw puzzle",
+        "features": [
+          "Interactive canvas using Animation Frames.",
+          "Puzzle customizer.",
+          "Image upload.",
+          "Procedural algorithm."
+        ],
+        "techStack": "Typescript, React, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing, CI/CD",
         "imageUrl": "/jigsaw.png"
       }
     ]

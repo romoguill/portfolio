@@ -56,7 +56,15 @@
           "technologies": ["Next.js", "Hono"],
           "languages": ["Typescript"]
         },
+        "sections": ["Resumen", "Características", "Tech Stack"],
         "description": "Startup que proporciona una plataforma para crear y gestionar informes médicos para centros de diagnóstico por imágenes. Permite a los hospitales externalizar sus informes, manteniendo el control del proceso y los datos.",
+        "features": [
+          "Subida de imágenes.",
+          "Generación de informes.",
+          "Gestión de informes.",
+          "Compartir informes."
+        ],
+        "techStack": "Typescript,Next.js, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing",
         "imageUrl": "/pixmed.png"
       },
       {
@@ -69,7 +77,15 @@
           "technologies": ["React", "Hono"],
           "languages": ["Typescript"]
         },
-        "description": "Juega un rompecabezas de la lista curada de juegos o sube tu propia imagen para crear tu propio rompecabezas generado proceduralmente",
+        "sections": ["Resumen", "Características", "Tech Stack"],
+        "description": "Juego de rompecabezas donde puedes elegir entre una lista curada de juegos o subir tu propia imagen para crear tu propio rompecabezas generado usando una semilla aleatoria.\nEl principal desafío fue la generación de las piezas del rompecabezas, utilizando un algoritmo para crear los cortes de las imágenes creando piezas con continuidad.",
+        "features": [
+          "Canvas interactivo utilizando Animation Frames.",
+          "Customizador de rompecabezas.",
+          "Subida de imágenes.",
+          "Algoritmo procedural."
+        ],
+        "techStack": "Typescript, React, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing, CI/CD",
         "imageUrl": "/jigsaw.png"
       }
     ]
