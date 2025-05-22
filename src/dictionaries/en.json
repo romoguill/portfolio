@@ -51,20 +51,21 @@
         "githubLink": "",
         "deployedLink": "https://pixmed.info",
         "card": {
-          "description": "Create and manage medical reports for imaging centers",
+          "description": "Platform for creating and managing medical reports for imaging diagnostic centers.",
           "type": "Fullstack Web App",
           "technologies": ["Next.js", "Hono"],
           "languages": ["Typescript"]
         },
         "sections": ["Summary", "Features", "Tech Stack"],
-        "description": "Startup that provides a platform for creating and managing medical reports for imaging centers. It enables hospitals to outsource their reports, while keeping control of the process and the data.",
+        "description": "MVP of a startup that enables hospitals to outsource the creation of medical reports from studies such as Magnetic Resonance, Tomography, etc. The objective is to reduce report generation costs and improve patient experience, especially for small hospitals and clinics that don't have specialized staff.",
         "features": [
-          "Image upload.",
-          "Report generation.",
-          "Report management.",
-          "Report sharing."
+          "RBAC with administrator, supervisor, doctor and patient roles",
+          "PDF document generation",
+          "Whisper AI for local audio transcription with workers",
+          "Report delivery via email",
+          "CI/CD with Docker and Github Actions"
         ],
-        "techStack": "Typescript,Next.js, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing",
+        "techStack": "Typescript, Next.js, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Postgres, Drizzle, Uploadthing, React-pdf, Whisper AI, Docker, Github Actions",
         "imageUrl": "/pixmed.png",
         "videoUrl": "https://www.youtube.com/embed/ZlC0KORihfM?si=gU6UG4LfFg8oQDyz"
       },

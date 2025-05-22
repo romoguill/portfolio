@@ -51,20 +51,21 @@
         "githubLink": "",
         "deployedLink": "https://pixmed.info",
         "card": {
-          "description": "Crear y gestionar informes médicos para centros de diagnóstico por imágenes",
+          "description": "Plataforma para crear y gestionar informes médicos para centros de diagnóstico por imágenes.",
           "type": "Aplicación Web Fullstack",
           "technologies": ["Next.js", "Hono"],
           "languages": ["Typescript"]
         },
         "sections": ["Resumen", "Características", "Tech Stack"],
-        "description": "Startup que proporciona una plataforma para crear y gestionar informes médicos para centros de diagnóstico por imágenes. Permite a los hospitales externalizar sus informes, manteniendo el control del proceso y los datos.",
+        "description": "MVP de una startup que permite a los hospitales tercerizar la realización de informes médicos a partir de los estudios como la Resonancia Magnética, Tomografía, etc. El objectivo es reducir los costos de generación de informes y mejorar la experiencia de los pacientes, en especial para hospitales y clinicas pequeñas que no disponen de personal especializado.",
         "features": [
-          "Subida de imágenes.",
-          "Generación de informes.",
-          "Gestión de informes.",
-          "Compartir informes."
+          "RBAC con roles de administrador, supervisor, doctor y paciente",
+          "Generación de documentos PDF",
+          "Whisper AI para transcripción de audios de forma local con workers",
+          "Envío de informes a través de email",
+          "CI/CD con Docker y Github Actions"
         ],
-        "techStack": "Typescript,Next.js, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing",
+        "techStack": "Typescript, Next.js, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Postgres, Drizzle, Uploadthing, React-pdf, Whisper AI, Docker, Github Actions",
         "imageUrl": "/pixmed.png",
         "videoUrl": "https://www.youtube.com/embed/ZlC0KORihfM?si=gU6UG4LfFg8oQDyz"
       },
