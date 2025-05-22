@@ -33,13 +33,17 @@ function ProjectModal({ isOpen, setIsOpen, data }: ProjectModalProps) {
 
           <ScrollArea.Root className='h-[700px] overflow-hidden relative'>
             <div className='absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-primary-950 to-transparent z-10 pointer-events-none' />
-            <ScrollArea.Viewport className='h-full w-full p-5'>
+            <ScrollArea.Viewport className='h-full w-full pl-5 pr-8 py-6'>
               <Dialog.Title className='text-2xl tracking-wider'>
                 {data.name}
               </Dialog.Title>
               <Dialog.Description>{data.card.description}</Dialog.Description>
               <div className='flex flex-col gap-5'>
-                <ProjectDisplay type='image' url={data.imageUrl} />
+                {data.videoUrl ? (
+                  <ProjectDisplay type='video' url={data.videoUrl} />
+                ) : (
+                  <ProjectDisplay type='image' url={data.imageUrl} />
+                )}
 
                 <article className='space-y-3'>
                   <div>

@@ -65,7 +65,8 @@
           "Compartir informes."
         ],
         "techStack": "Typescript,Next.js, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing",
-        "imageUrl": "/pixmed.png"
+        "imageUrl": "/pixmed.png",
+        "videoUrl": "https://www.youtube.com/embed/ZlC0KORihfM?si=gU6UG4LfFg8oQDyz"
       },
       {
         "name": "Jigsaw",
@@ -85,7 +86,7 @@
           "Subida de imágenes.",
           "Algoritmo procedural."
         ],
-        "techStack": "Typescript, React, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing, CI/CD",
+        "techStack": "Typescript, React, Hono, TailwindCSS, Shadcn/UI, Tanstack Query, Tanstack Router, Uploadthing, CI/CD, Sharp",
         "imageUrl": "/jigsaw.png"
       }
     ]

@@ -9,9 +9,14 @@ interface ProjectDisplayProps {
 
 function ProjectDisplay({ type, url }: ProjectDisplayProps) {
   return (
-    <div className='bg-neutral-600 border-white w-full aspect-video h-[200px] relative my-3'>
+    <div className='bg-neutral-600 border-white w-full aspect-video h-[300px] relative my-3'>
       {type === 'video' ? (
-        <video src={url} autoPlay muted loop />
+        <iframe
+          className='w-full h-full'
+          src='https://www.youtube.com/embed/ZlC0KORihfM?si=gU6UG4LfFg8oQDyz'
+          title='PixMed Demo'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+        />
       ) : (
         <Image
           src={url}
