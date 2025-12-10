@@ -20,7 +20,7 @@
   },
   "about": {
     "sectionTitle": "About Me",
-    "main": "Hello, I'm Rodrigo Moguillansky, an Industrial Engineer and web developer with a background in Supply Chain management. With 8 years of experience in automating processes, constructing and implementing ERP custom software, and optimizing business operations, I bring a distinct perspective to software development. Over the past year and a half, I have dedicated myself to transitioning into web development, focusing on creating impactful solutions for businesses.",
+    "main": "I am a Full Stack Developer with a foundation in Industrial Engineering. My career began in Supply Chain Management, where I spent 8 years optimizing complex operations and implementing custom ERPs. Today, I translate that systems-thinking into scalable software. Most recently, I worked at a Software Factory architecting the backend of a high-volume food delivery platform and co-developed PixMed, a SaaS solution for medical reporting. I specialize in building complex business logic, and intuitive UIs using Typescript and modern frontend and backend frameworks. I don't just write code; I engineer efficient digital solutions for real-world business problems.",
     "option": {
       "expand": "know more",
       "collapse": "too much"

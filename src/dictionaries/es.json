@@ -20,7 +20,7 @@
   },
   "about": {
     "sectionTitle": "Introducción",
-    "main": "Hola, soy Rodrigo Moguillansky, Ingeniero Industrial y desarrollador web con experiencia en la gestión de la cadena de suministro. Con 8 años de experiencia en la automatización de procesos, la construcción e implementación de software ERP personalizado, y la optimización de operaciones comerciales, aporto una perspectiva única al desarrollo de software. En el último año y medio, me he dedicado a la transición hacia el desarrollo web, enfocándome en crear soluciones de gran impacto para las empresas.",
+    "main": "Soy Desarrollador Full Stack con formación en Ingeniería Industrial. Mi carrera comenzó en Gestión de la Cadena de Suministro (Supply Chain Management), donde pasé 8 años optimizando operaciones complejas e implementando ERP a medida. Hoy, traduzco ese pensamiento sistémico en software escalable. Más recientemente, trabajé en una Software Factory diseñando la arquitectura del backend de una plataforma de delivery de alimentos de alto volumen, y fui co-desarrollador de PixMed, una solución SaaS para informes médicos. Me especializo modelar lógicas de procesos complejas y crear interfaces de usuario intuitivas, utilizando TypeScript y frameworks modernos tanto para el frontend como el backend. No solo escribo código; diseño soluciones digitales eficientes para problemas reales de negocio.",
     "option": {
       "expand": "saber más",
       "collapse": "menos"
