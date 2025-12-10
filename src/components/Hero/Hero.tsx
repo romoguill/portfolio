@@ -18,7 +18,7 @@ function Hero({ data, lang }: HeroProps) {
       id="home"
       className="my-10 sm:my-20 text-primary-50 lg:flex lg:justify-between lg:items-center"
     >
-      <div className="flex flex-col items-center sm:flex-row sm:items-center sm:gap-8 md:gap-10">
+      <div className="flex flex-col items-center sm:flex-row sm:items-center sm:gap-8 md:gap-10 lg:gap-8">
         <div className="flex flex-col gap-2 text-center sm:text-start">
           <h1 className="text-3xl sm:text-4xl">Rodrigo Moguillansky</h1>
           <h3 className="text-xl text-primary-100">Full Stack Web Developer</h3>
@@ -49,7 +49,7 @@ function Hero({ data, lang }: HeroProps) {
               className="flex items-center justify-center lg:justify-between gap-2 lg:w-[100px]"
               download="Rodrigo Moguillansky - Resume.pdf"
             >
-              Resume{" "}
+              Resume
               <span>
                 <FaRegFilePdf />
               </span>
@@ -61,7 +61,7 @@ function Hero({ data, lang }: HeroProps) {
               className="flex items-center justify-center lg:justify-between gap-2 lg:w-[100px]"
               target="_blank"
             >
-              GitHub{" "}
+              GitHub
               <span>
                 <FaGithub />
               </span>
